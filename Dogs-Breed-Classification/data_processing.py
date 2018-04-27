@@ -37,7 +37,8 @@ def organise_dataset(root_path,):
 
 
 def main():
-    organise_dataset('/Users/raghav/Documents/datascience/git/Deep-Learning/Dogs-Breed-Classification')
+    #Change your test data root path
+    organise_dataset('/Users/raghav/Documents/Deep-Learning/Dogs-Breed-Classification')
 
 if __name__ == '__main__':
     main()
