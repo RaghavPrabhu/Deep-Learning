@@ -4,7 +4,7 @@
 Created on Thu Apr 26 07:16:04 2018
 
 @author: raghav prabhu
-Re-modified TensorFlow classification
+Re-modified TensorFlow classification file according to our need.
 """
 import tensorflow as tf
 import sys
@@ -14,6 +14,9 @@ import csv
 # Disable tensorflow compilation warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
+'''
+Classify images from test folder and predict dog breeds along with score.
+'''
 def classify_image(image_path, headers):
     f = open('submit.csv','w')
     writer = csv.DictWriter(f, fieldnames = headers)
