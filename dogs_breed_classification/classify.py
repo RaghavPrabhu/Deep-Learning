@@ -50,7 +50,7 @@ def classify_image(image_path, headers):
                 for node_id in top_k:
                     human_string = label_lines[node_id]
 
-                    # Some breed names are mismatching with breed name in csv header name.
+                    # Some breed names are mismatching with breed name in csv header names.
                     human_string = human_string.replace(" ","_")
                     if(human_string == 'german_short_haired_pointer'):
                         human_string = 'german_short-haired_pointer'
