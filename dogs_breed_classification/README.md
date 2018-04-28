@@ -13,5 +13,11 @@ Download Files
  
  # Setup and Install
  - clone the project 
-    > git clone git@github.com:RaghavPrabhu/Deep-Learning.git
+    > git clone git@github.com:RaghavPrabhu/Deep-Learning.git 
+ - cd Deep-Learning/dogs_breed_classification/
+ - Create virtual environment, if you want using virtualenv command
+ - Install dependent libararies
+    > pip install -r requirements.txt
+    
+ # Organise the train folder
  
