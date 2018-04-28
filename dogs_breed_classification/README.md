@@ -13,6 +13,7 @@ The dataset contains train and test dog images along with various type of dog br
  ![Kaggle Site](https://github.com/RaghavPrabhu/Deep-Learning/blob/master/dogs_breed_classification/img/kaggle_site.png)
  
  ## Setup and Install
+ - Python 3.5 & above required!
  - clone the project 
    > git clone git@github.com:RaghavPrabhu/Deep-Learning.git 
     
@@ -21,11 +22,15 @@ The dataset contains train and test dog images along with various type of dog br
  - Create virtual environment, if you want using virtualenv command
  - Install dependent libararies
    > pip install -r requirements.txt
+ - Unzip all folders which we downloaded from Kaggle's site
+   - unzip train.zip
+   - unzip test.zip
+   - unzip labels.csv.zip
     
  ## Organise the train folder
  - Run data processing python code to re-arrange folders by dogs breed name
  
-   > python data_processing.py /Users/raghav/Desktop/dogs_breed/ 
+   > python data_processing.py /Users/raghav/Desktop/dogs_breed_classification/ 
  
  ## Train your dataset
  - Run the below command to train your model using CNN architectures. By default, below script will download 'Google's inception architecture - 'inception-2015-12-05.tgz'.
