@@ -31,4 +31,29 @@ The dataset contains train and test dog images along with various type of dog br
  - Run the below command to train your model using CNN architectures. By default, below script will download 'Google's inception architecture - 'inception-2015-12-05.tgz'.
  
    > python retrain.py --image_dir=dataset/ --bottleneck_dir=bottleneck/ --how_many_training_steps=500 --output_graph=trained_model/retrained_graph.pb --output_labels=trained_model/retrained_labels.txt --summaries_dir=summaries
+   
+         
+           Downloading inception-2015-12-05.tgz ...
+           INFO:tensorflow:Looking for images in 'collie'
+           INFO:tensorflow:Looking for images in 'scotch_terrier'
+           INFO:tensorflow:Looking for images in 'brittany_spaniel'
+           INFO:tensorflow:Looking for images in 'labrador_retriever'
+           INFO:tensorflow:Looking for images in 'cairn'
+           INFO:tensorflow:Looking for images in 'norwich_terrier'
+           INFO:tensorflow:Looking for images in 'miniature_poodle'
+           INFO:tensorflow:Looking for images in 'komondor'
+           INFO:tensorflow:Looking for images in 'rhodesian_ridgeback'
+           INFO:tensorflow:Looking for images in 'saint_bernard'
+           INFO:tensorflow:Looking for images in 'pekinese'
+           INFO:tensorflow:Looking for images in 'cardigan'
+           INFO:tensorflow:Looking for images in 'dandie_dinmont'
+           INFO:tensorflow:Looking for images in 'keeshond'
+           INFO:tensorflow:Looking for images in 'bloodhound'
+           INFO:tensorflow:Looking for images in 'norfolk_terrier'
+           INFO:tensorflow:Looking for images in 'silky_terrier'
+           INFO:tensorflow:Looking for images in 'boston_bull' 
+           .... 
+  
+  
+           
  
