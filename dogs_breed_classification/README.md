@@ -32,7 +32,7 @@ The dataset contains train and test dog images along with various type of dog br
  
    > python data_processing.py /Users/raghav/Desktop/dogs_breed_classification/ 
  
- ## Train your dataset
+ ## Train your model using our processed dataset
  - Run the below command to train your model using CNN architectures. By default, below script will download 'Google's inception architecture - 'inception-2015-12-05.tgz'.
  
    > python retrain.py --image_dir=dataset/ --bottleneck_dir=bottleneck/ --how_many_training_steps=500 --output_graph=trained_model/retrained_graph.pb --output_labels=trained_model/retrained_labels.txt --summaries_dir=summaries
@@ -60,5 +60,35 @@ The dataset contains train and test dog images along with various type of dog br
            .... 
   
   
-           
+  ## Test your model
+  - Run the below python script to classify your test images based on our pre-trained model.
+    > python classify.py
+  
+          japanese_spaniel (score = 0.10750)
+          pekinese (score = 0.05065)
+          blenheim_spaniel (score = 0.03431)
+          papillon (score = 0.02191)
+          shih-tzu (score = 0.02064)
+          pomeranian (score = 0.01520)
+          lhasa (score = 0.01302)
+          brabancon_griffon (score = 0.01080)
+          maltese_dog (score = 0.01051)
+          chihuahua (score = 0.01032)
+          clumber (score = 0.01020)
+          pug (score = 0.01009)
+          sussex_spaniel (score = 0.00966)
+          shetland_sheepdog (score = 0.00965)
+          boston_bull (score = 0.00955)
+          keeshond (score = 0.00934)
+          affenpinscher (score = 0.00919)
+          bernese_mountain_dog (score = 0.00896)
+          saluki (score = 0.00841)
+          cocker_spaniel (score = 0.00826)
+          samoyed (score = 0.00804)
+          ...
+          
+          
+ ## Done.
+  
+  
  
