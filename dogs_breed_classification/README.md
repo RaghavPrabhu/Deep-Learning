@@ -14,17 +14,21 @@ The dataset contains train and test dog images along with various type of dog br
  
  ## Setup and Install
  - clone the project 
-    > git clone git@github.com:RaghavPrabhu/Deep-Learning.git 
+   > git clone git@github.com:RaghavPrabhu/Deep-Learning.git 
+    
  - cd Deep-Learning/dogs_breed_classification/
+ 
  - Create virtual environment, if you want using virtualenv command
  - Install dependent libararies
-    > pip install -r requirements.txt
+   > pip install -r requirements.txt
     
  ## Organise the train folder
  - Run data processing python code to re-arrange folders by dogs breed name
+ 
    > python data_processing.py /Users/raghav/Desktop/dogs_breed/ 
  
  ## Train your dataset
- - Run the below command to train your model using CNN architectures. By default, below script will download 'Google's inception architecture - 'inception-2015-12-05.tgz' 
+ - Run the below command to train your model using CNN architectures. By default, below script will download 'Google's inception architecture - 'inception-2015-12-05.tgz'.
+ 
    > python retrain.py --image_dir=dataset/ --bottleneck_dir=bottleneck/ --how_many_training_steps=500 --output_graph=trained_model/retrained_graph.pb --output_labels=trained_model/retrained_labels.txt --summaries_dir=summaries
  
