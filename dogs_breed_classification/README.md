@@ -1,0 +1,23 @@
+# Image Classification Tutorial - TensorFlow!
+This tutorial uses Kaggle's [dog breed identification](https://www.kaggle.com/c/dog-breed-identification) competition dataset. The data will be pre-processed, train images and predict dog types with score! 
+![Dog Breed Dataset](https://github.com/RaghavPrabhu/Deep-Learning/blob/master/dogs_breed_classification/img/dogs_type_small.png)
+
+The dataset contains train and test dog images along with various type of dog breeds listed in labels.csv. Data set can be downloaded into Kaggle site by using the above mentioned link. The dataset looks like in below. 
+
+Download Files
+ - train.zip
+ - test.zip
+ - labels.csv.zip
+ 
+ ![Kaggle Site](https://github.com/RaghavPrabhu/Deep-Learning/blob/master/dogs_breed_classification/img/kaggle_site.png)
+ 
+ # Setup and Install
+ - clone the project 
+    > git clone git@github.com:RaghavPrabhu/Deep-Learning.git 
+ - cd Deep-Learning/dogs_breed_classification/
+ - Create virtual environment, if you want using virtualenv command
+ - Install dependent libararies
+    > pip install -r requirements.txt
+    
+ # Organise the train folder
+ 
