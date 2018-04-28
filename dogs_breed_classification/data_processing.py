@@ -3,10 +3,16 @@
 """
 Created on Fri Apr 27 07:35:55 2018
 
-@author: raghav
+@author: raghav prabhu
+
+Sample Run:
+----------
+python data_processing.py /Users/raghav/Desktop/dogs_breed/ 
+
 """
 
 import os
+import sys
 import pandas as pd
 
 """ 
@@ -32,13 +38,14 @@ def organise_dataset(root_path,):
         os.makedirs(dataset_path+'/'+folder_name, exist_ok=True)
         source = train_data+file
         destination = dataset_path+'/'+folder_name+'/'+file
+        # Moving files from source (train folder) to detination folder under each breed
         os.rename(source, destination)
     print("Dataset folders successfully created by breed name and copied all images in corresponding folders")
 
 
 def main():
-    #Change your test data root path
-    organise_dataset('/Users/raghav/Documents/Deep-Learning/Dogs-Breed-Classification')
+    # Take folder path as in command line argument
+    organise_dataset(sys.argv[1])
 
 if __name__ == '__main__':
     main()
