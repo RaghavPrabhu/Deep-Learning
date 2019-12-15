@@ -105,7 +105,7 @@ import tarfile
 
 import numpy as np
 from six.moves import urllib
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from tensorflow.python.framework import graph_util
 from tensorflow.python.framework import tensor_shape

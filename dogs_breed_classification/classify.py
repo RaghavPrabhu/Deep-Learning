@@ -24,10 +24,10 @@ def classify_image(image_path, headers):
     
     # Loads label file, strips off carriage return
     label_lines = [line.rstrip() for line
-                   in tf.gfile.GFile("trained_model/retrained_labels.txt")]
+                   in tf.io.gfile.GFile("build/trained_model/retrained_labels.txt")]
    
     # Unpersists graph from file
-    with tf.gfile.FastGFile("trained_model/retrained_graph.pb", 'rb') as f:
+    with tf.io.gfile.GFile("build/trained_model/retrained_graph.pb", 'rb') as f:
         graph_def = tf.GraphDef()
         graph_def.ParseFromString(f.read())
         _ = tf.import_graph_def(graph_def, name='')
@@ -36,7 +36,7 @@ def classify_image(image_path, headers):
     with tf.Session() as sess:
          for file in files:
              # Read the image_data
-                image_data = tf.gfile.FastGFile(image_path+'/'+file, 'rb').read()
+                image_data = tf.io.gfile.GFile(image_path+'/'+file, 'rb').read()
                 # Feed the image_data as input to the graph and get first prediction
                 softmax_tensor = sess.graph.get_tensor_by_name('final_result:0')
 
@@ -77,7 +77,7 @@ def classify_image(image_path, headers):
     f.close()    
 
 def main():
-    test_data_folder = 'test'
+    test_data_folder = 'build/test'
     
     template_file = open('sample_submission.csv','r')
     d_reader = csv.DictReader(template_file)
