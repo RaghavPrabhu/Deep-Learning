@@ -1,1 +1,11 @@
 env/
+build/bottleneck/
+build/dataset/
+build/labels.csv
+build/summaries/
+build/test.zip
+build/test/
+build/train.zip
+build/trained_model/retrained_graph.pb
+submit.csv
+
