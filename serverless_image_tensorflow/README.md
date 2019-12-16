@@ -32,13 +32,14 @@ Image recognition process using the MobileNet model in serverless cloud function
  - Open the browser and enter the URL - http://localhost
  - You will see the below screen 
  
- **UI Home Screen**
+ - UI Home Screen
  ![Tensorflow Image Home Screen](https://github.com/RaghavPrabhu/Deep-Learning/blob/master/serverless_image_tensorflow/img/home_screen.png)       
 
- **UI Input Screen**
+ - UI Input Screen
  ![Tensorflow Image Input Screen](https://github.com/RaghavPrabhu/Deep-Learning/blob/master/serverless_image_tensorflow/img/upload_screen.png)     
 
- **UI Output Screen**
+
+ - UI Output Screen
  ![Tensorflow Image Output Screen](https://github.com/RaghavPrabhu/Deep-Learning/blob/master/serverless_image_tensorflow/img/output_screen.png)  
 
  ## Done.
