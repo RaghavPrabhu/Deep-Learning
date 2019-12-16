@@ -19,7 +19,9 @@ The dataset contains train and test dog images along with various type of dog br
     
  - cd Deep-Learning/dogs_breed_classification/
  
- - Create virtual environment, if you want using virtualenv command
+ - Create virtual environment
+   > virtualenv -p python3 env
+   > source env/bin/activate
  - Install dependent libararies
    > pip install -r requirements.txt
  - Unzip all folders which we downloaded from Kaggle's site
@@ -30,12 +32,12 @@ The dataset contains train and test dog images along with various type of dog br
  ## Organise the train folder
  - Run data processing python code to re-arrange folders by dogs breed name
  
-   > python data_processing.py /Users/raghav/Desktop/dogs_breed_classification/ 
+   > python3 data_processing.py
  
  ## Train your model using our processed dataset
  - Run the below command to train your model using CNN architectures. By default, below script will download 'Google's inception architecture - 'inception-2015-12-05.tgz'.
  
-   > python retrain.py --image_dir=dataset/ --bottleneck_dir=bottleneck/ --how_many_training_steps=500 --output_graph=trained_model/retrained_graph.pb --output_labels=trained_model/retrained_labels.txt --summaries_dir=summaries
+   > python3 retrain.py --image_dir=build/dataset/ --bottleneck_dir=build/bottleneck/ --how_many_training_steps=500 --output_graph=build/trained_model/retrained_graph.pb --output_lables=build/trained_model/retrained_labels.txt --summaries_dir=build/summaries
    
          
            Downloading inception-2015-12-05.tgz ...
