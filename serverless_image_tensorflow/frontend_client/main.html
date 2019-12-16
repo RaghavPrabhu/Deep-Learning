@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button_disable {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: darkgray;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/static/Image_Analyse.jpg" alt="Image Analyse" style="width:100%">
+      <div class="container">
+        <h2>Image Analyse Techniques</h2>
+        <p class="title">Using TensorFlow - CNN Algorithm.</p>
+        <p>A framework that receives the input image, analyse the image and detects the objects in the image.</p>
+        <p><a href="/index"<button class="button">Try Now</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <img src="/static/Object_Detection.jpg" alt="Objection Detection" style="width:100%">
+      <div class="container">
+        <h2>Objects Detection Techniques</h2>
+        <p class="title">Using YOLOv3, SSD and Faster R-CNN Algorithms.</p>
+        <p>Object detections from the given image and list out detected objects with its prediction score / percentages. </p>
+        <p><a <button class="button_disable">Try Now</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+        <img src="/static/Video_Processing.jpg" alt="Video Processing" style="width:100%">
+      <div class="container">
+        <h2>Real-time Objects Detections</h2>
+        <p class="title">Using YOLOv3 algorithm with OpenCV implementation.  </p>
+        <p>Real-time video streams from OpenCV and detects objects. It supports automatic number plate recognotion.</p>
+        <p><a <button class="button_disable">Try Now</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+        <img src="/static/Text_Processing.jpg" alt="Text Processing" style="width:100%">
+      <div class="container">
+        <h2>Natural Language Processing</h2>
+        <p class="title">Using TensorFlow - NLP techniques</p>
+        <p>The framework which process the text and identifies the context.</p>  
+        <p><a <button class="button_disable">Try Now</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+        <img src="/static/Audio_Processing.jpg" alt="Audio Processing" style="width:100%">
+      <div class="container">
+        <h2>Speech Recognition</h2>
+        <p class="title">Audio processing -  using TensorFlow Framework.</p>
+        <p>It receives the audio stream, process the audio, converts speech to text and identify the contexts. </p>
+        
+        <p><a <button class="button_disable">Try Now</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

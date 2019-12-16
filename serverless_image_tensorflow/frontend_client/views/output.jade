@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    style
+      include ../static/bootstrap.min.css
+      include ../static/custom.css
+    title Image Processed Result
+  body
+    #container
+       .row
+         .col-md-6
+           .myOutput
+              img(alt='image', src='data:img/png;base64,#{src}')
+              div
+                table
+                  thead
+                    tr
+                      th Name
+                      th probability
+                  tbody
+                    each object in title
+                      tr
+                        td= object.className
+                        td= object.probability
+                    else 
+                      li Unable to process this image!   
+              
+                a(href="/")
+                  button(type="button").btn.btn-info Click to Home
+
+      

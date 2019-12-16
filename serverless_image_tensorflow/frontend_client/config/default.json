@@ -1,0 +1,7 @@
+{
+"backend" : {
+    "api" : {
+        "endpoint" : "https://k8he2hlkeb.execute-api.us-east-1.amazonaws.com/dev/detect"
+    }
+ }
+}

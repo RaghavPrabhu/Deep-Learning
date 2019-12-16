@@ -1,0 +1,136 @@
+.files input {
+    padding: 120px 0px 85px 35%;
+    text-align: center !important;
+    margin: 0;
+    width: 100% !important;
+}
+
+.files input:focus {
+
+    border: 1px solid #7eb5ed;
+}
+
+.files {
+    position: relative;
+    margin-top: 15px;
+}
+
+.files:after {
+    pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 130px;
+    right: 0;
+    height: 136px;
+    content: "";
+    background-image: url(/static/upload.png);
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.color input {
+    background-color: #f1f1f1;
+}
+
+.files:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 57px;
+    content: " or drag files in here. ";
+    display: block;
+    margin: 0 auto;
+    color: #000;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.form-control {
+    border: 1px solid #007bff;
+}
+
+.files input[type="file"] {
+    color: black
+}
+
+.myOutput {
+    /*  border: 1px solid #047a9c; */
+    border-radius: 4px;
+    padding: 5px 7px;
+    margin: 2px;
+    background: #fff;
+    display: inline-block;
+    color: white !important;
+    /* padding: 140px 0px 85px 0%; */
+    text-align: left !important;
+    margin: 0;
+    width: 100% !important;
+}
+
+.myOutput {
+    color: rgb(0, 162, 255) !important;
+}
+
+.myLabel {
+    /*  border: 1px solid #047a9c; */
+    border-radius: 4px;
+    padding: 5px 7px;
+    margin: 2px;
+    background: #fff;
+    display: inline-block;
+    color: white !important;
+    /* padding: 140px 0px 85px 0%; */
+    text-align: center !important;
+    margin: 0;
+    width: 100% !important;
+}
+
+.myLabel {
+    color: blue !important;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+    text-align: center;
+}
+
+#loading-image {
+    position: absolute;
+    top: 150px;
+    z-index: 100;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.portrait {
+    height: 80px;
+    width: 30px;
+}
+
+.landscape {
+    height: 30px;
+    width: 80px;
+}
+
+.square {
+    height: 75px;
+    width: 75px;
+}
