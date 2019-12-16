@@ -17,8 +17,8 @@ Image recognition process using the MobileNet model in serverless cloud function
 
  - cd Deep-Learning/serverless_image_tensorflow/
 
- - export AWS_ACCESS_KEY_ID=<<YOUR AWS ACCESS KEY>>
- - export AWS_SECRET_ACCESS_KEY=<<YOUR AWS SECRET KEY>> 
+ - export AWS_ACCESS_KEY_ID=<YOUR AWS ACCESS KEY>
+ - export AWS_SECRET_ACCESS_KEY=<YOUR AWS SECRET KEY>
 
  - npm install
  
